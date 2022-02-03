@@ -28,7 +28,7 @@
 
   <!-- Device -->
   <remove-project name="device/qcom/common" />
-  <project path="device/qcom/common" name="AOSPA/android_device_qcom_common" remote="aospa" >
+  <project path="device/qcom/common" name="AOSPA-XD/android_device_qcom_common" remote="aospa-xd" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <remove-project name="device/qcom/sepolicy_vndr" />
@@ -54,8 +54,10 @@
   <project path="external/themelib" name="AOSPA/android_external_themelib" remote="aospa" />
 
   <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="AOSPA-XD/android_frameworks_av" remote="aospa-xd" />
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" />
+  <project path="frameworks/base" name="AOSPA-XD/android_frameworks_base" remote="aospa-xd" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="AOSPA/android_frameworks_native" remote="aospa" />
 
@@ -68,22 +70,22 @@
   <project path="hardware/qcom/wlan" name="AOSPA/android_hardware_qcom_wlan" remote="aospa" />
 
   <!-- Manifest -->
-  <project path="manifest" name="AOSPA/manifest" remote="aospa" />
+  <project path="manifest" name="AOSPA-XD/manifest" remote="aospa-xd" />
 
   <!-- Packages (AOSPA) -->
-  <project path="packages/apps/ParanoidDoze" name="AOSPA/android_packages_apps_ParanoidDoze" remote="aospa" />
+  <project path="packages/apps/ParanoidDoze" name="AOSPA-XD/android_packages_apps_ParanoidDoze" remote="aospa-xd" />
   <project path="packages/apps/ParanoidHub" name="AOSPA/android_packages_apps_ParanoidHub" remote="aospa" />
   <project path="packages/apps/ParanoidPapers" name="AOSPA/android_packages_apps_ParanoidPapers" remote="aospa" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="AOSPA/android_packages_apps_Settings" remote="aospa" />
+  <project path="packages/apps/Settings" name="AOSPA-XD/android_packages_apps_Settings" remote="aospa-xd" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project path="packages/apps/SettingsIntelligence" name="AOSPA/android_packages_apps_SettingsIntelligence" remote="aospa" />
   <remove-project name="platform/packages/apps/ThemePicker" />
-  <project path="packages/apps/ThemePicker" name="AOSPA/android_packages_apps_ThemePicker" remote="aospa" />
+  <project path="packages/apps/ThemePicker" name="AOSPA-XD/android_packages_apps_ThemePicker" remote="aospa-xd" />
   <remove-project name="platform/packages/apps/Launcher3" />
-  <project path="packages/apps/Launcher3" name="AOSPA/android_packages_apps_Launcher3" remote="aospa" />
+  <project path="packages/apps/Launcher3" name="AOSPA-XD/android_packages_apps_Launcher3" remote="aospa-xd" />
   <remove-project name="platform/packages/services/Telecomm" />
   <project path="packages/services/Telecomm" name="AOSPA/android_packages_services_Telecomm" remote="aospa" />
 
@@ -103,7 +105,7 @@
   <!-- Vendor (AOSPA) -->
   <project path="vendor/google/gms" name="ThankYouMario/proprietary_vendor_google_gms" remote="bitbucket" />
   <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" />
-  <project path="vendor/aospa" name="AOSPA/android_vendor_aospa" remote="aospa" >
+  <project path="vendor/aospa" name="AOSPA-XD/android_vendor_aospa" remote="aospa-xd" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="blobs" />
@@ -124,8 +126,10 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
   </project>
   <remove-project name="platform/vendor/qcom-opensource/power" />
-  <project path="vendor/qcom/opensource/power" name="AOSPA/android_vendor_qcom-opensource_power" remote="aospa" />
+  <project path="vendor/qcom/opensource/power" name="AOSPA-XD/android_vendor_qcom-opensource_power" remote="aospa-xd" />
   <remove-project name="platform/vendor/qcom-opensource/vibrator" />
   <project path="vendor/qcom/opensource/vibrator" name="AOSPA/android_vendor_qcom-opensource_vibrator" remote="aospa" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="AOSPA-XD/android_vendor_qcom-opensource_fm-commonsys" remote="aospa-xd" />
 
 </manifest>
