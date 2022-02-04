@@ -5,7 +5,7 @@
   <remove-project name="platform/art" />
   <project path="art" name="AOSPA/android_art" remote="aospa" />
   <remove-project name="platform/bionic" />
-  <project path="bionic" name="AOSPA/android_bionic" remote="aospa" />
+  <project path="bionic" name="AOSPA-XD/android_bionic" remote="aospa-xd" />
   <remove-project name="platform/build" />
   <project path="build/make" name="AOSPA/android_build" remote="aospa" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -52,6 +52,10 @@
   <!-- External (ProtonAOSP) -->
   <project path="external/colorkt" name="AOSPA/android_external_colorkt" remote="aospa" />
   <project path="external/themelib" name="AOSPA/android_external_themelib" remote="aospa" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="AOSPA-XD/android_external_jemalloc_new" groups="pdk" remote="aospa-xd" />
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib-ng" name="AOSPA-XD/android_external_zlib-ng" groups="pdk" remote="aospa-xd" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
