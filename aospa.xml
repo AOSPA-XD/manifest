@@ -3,7 +3,7 @@
 
   <!-- Build and Core -->
   <remove-project name="platform/art" />
-  <project path="art" name="AOSPA/android_art" remote="aospa" />
+  <project path="art" name="AOSPA-XD/android_art" remote="aospa-xd" />
   <remove-project name="platform/bionic" />
   <project path="bionic" name="AOSPA-XD/android_bionic" remote="aospa-xd" />
   <remove-project name="platform/build" />
